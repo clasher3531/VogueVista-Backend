@@ -1,0 +1,7 @@
+{
+    "stdDeliveryPrice": 0,
+    "satDeliveryPrice": 50.00,
+    "taxPercentage": 5,
+    "STDMETHOD": "Standard Delivery",
+    "SATMETHOD": "Saturday Delivery"
+}

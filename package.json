@@ -1,0 +1,24 @@
+{
+  "name": "online-shopping-backend",
+  "version": "1.0.0",
+  "description": "This is the backend repository for online shopping app",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^5.5.0",
+    "mongoose": "^6.12.2",
+    "nodemon": "^3.0.3",
+    "path": "^0.12.7",
+    "validator": "^13.11.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
