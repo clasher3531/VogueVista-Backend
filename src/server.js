@@ -13,9 +13,16 @@ require("../src/db/Connection");
 const server = express();
 const port = process.env.PORT || 9000;
 
-// CORS options to allow requests from frontend running on port 3000
+const allowedOrigins = process.env.ALLOWED_ORIGINS;
+
 const corsOptions = {
-  origin: process.env.ALLOWED_ORIGINS, // Allow only requests from this origin
+  origin: function (origin, callback) {
+    if (!origin || allowedOrigins.indexOf(origin) !== -1) {
+      callback(null, true);
+    } else {
+      callback(new Error("Not allowed by CORS"));
+    }
+  },
   methods: "GET,POST,PATCH,DELETE", // Allow only these methods
   allowedHeaders: ["Content-Type", "Authorization"], // Allow only these headers
 };
