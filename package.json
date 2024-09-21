@@ -1,7 +1,7 @@
 {
   "name": "voguevista-backend",
   "version": "1.0.0",
-  "description": "This is the backend repository for online shopping app",
+  "description": "This is the backend repository for vogue vista website",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
